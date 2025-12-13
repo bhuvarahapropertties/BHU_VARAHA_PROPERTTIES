@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BHU VARAHA PROPERTIES</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* HEADER SECTION */
+        header {
+            position: relative;
+            background: center/cover no-repeat;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Dark overlay */
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.45);
+        }
+
+        /* Text content */
+        .header-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .header-content img {
+            width: 120px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .header-content h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            margin: 0;
+            text-shadow: 0px 2px 10px rgba(0,0,0,0.6);
+        }
+
+        .header-content p {
+            margin-top: 10px;
+            font-size: 1.4rem;
+            font-weight: 500;
+            text-shadow: 0px 2px 10px rgba(0,0,0,0.8);
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #1a73e8;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 50px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); }
+
+        /* PROPERTY GRID */
+        .property-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .property-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .property-card:hover { transform: translateY(-6px); }
+        .property-card img { width: 100%; height: 180px; object-fit: cover; }
+        .property-card .info { padding: 15px; }
+        .property-card .info h3 { margin: 0; color: #1a73e8; }
+
+        /* ATTRACTIVE CONTACT */
+        .contact-card {
+            border-left: 6px solid #1a73e8;
+            padding: 30px;
+            background: linear-gradient(to bottom right, #ffffff, #f3f7ff);
+        }
+        .contact-card h2 {
+            text-align: center;
+            color: #1a73e8;
+        }
+        .contact-card p {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+        .contact-details {
+            display:flex;
+            flex-direction: column;
+            gap: 15px;
+            font-size: 1.1rem;
+        }
+        .contact-details p strong {
+            color: #1a73e8;
+        }
+        .contact-button {
+            text-align:center;
+            margin-top: 20px;
+        }
+        .contact-button a {
+            background:#1a73e8; 
+            color:white; 
+            padding:12px 25px; 
+            border-radius:8px; 
+            font-size:1.1rem;
+            text-decoration:none;
+            box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+            display:inline-block;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a73e8;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO HEADER -->
+    <header>
+        <div class="overlay"></div>
+
+        <div class="header-content">
+            <img src="logo.png" alt="BHU Varaha Logo" style="width: 300px; height: 200px;">
+            <h1>BHU VARAHA PROPERTIES</h1>
+            <p>We Help You Buy Better. We Help You Sell Faster</p>
+        </div>
+    </header>
+
+    <!-- NAV BAR -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#properties">Properties</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- HOME -->
+    <div id="home" class="section">
+        <div class="card">
+            <h2>Why Choose Us?</h2>
+            <p>
+                Buyers find what they want. Sellers get the customers they need.
+                We make property buying and selling easier, faster, and more reliable.
+            </p>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="section">
+        <div class="card">
+            <h2>About Us</h2>
+            <p>
+                BHU Varaha Properties is dedicated to helping people find genuine and suitable properties—whether it's land, flats, or investment opportunities.
+                We personally visit each site, verify the surroundings, meet the owners, and ensure every property we show is trustworthy and accurate.
+                <br><br>
+                We also assist property owners in selling their land or flats by connecting them with genuine buyers.
+                Our goal is to make both buying and selling easy, transparent, and reliable for everyone.
+            </p>
+        </div>
+    </div>
+
+    <!-- PROPERTIES -->
+    <div id="properties" class="section">
+        <h2 style="text-align:center; margin-bottom:20px;">Featured Properties</h2>
+
+        <div class="property-grid">
+
+            <!-- Apartments -->
+            <div class="property-card">
+                <img src="apartment.jpg" alt="Apartments" />
+                <div class="info">
+                    <h3>Apartments</h3>
+                    <p>Affordable 1BHK–3BHK homes with premium finishing and family-friendly space.</p>
+                </div>
+            </div>
+
+            <!-- Independent House -->
+            <div class="property-card">
+                <img src="IndependentHouse.jpeg" alt="Independent House" />
+                <div class="info">
+                    <h3>Independent House / Villa</h3>
+                    <p>Beautifully built home with peaceful surroundings.</p>
+                </div>
+            </div>
+
+            <!-- Open Plot / Land -->
+            <div class="property-card">
+                <img src="ResidentialLand.jpg" alt="Residential Land" />
+                <div class="info">
+                    <h3>Open Plot / Residential Land</h3>
+                    <p>Ideal for constructing your dream home.</p>
+                </div>
+            </div>
+
+            <!-- Gated Community Plot -->
+            <div class="property-card">
+                <img src="GatedCommunity.jpg" alt="Gated Community" />
+                <div class="info">
+                    <h3>Gated Community Plot</h3>
+                    <p>Secure, developed community with amenities.</p>
+                </div>
+            </div>
+
+            <!-- Commercial Space -->
+            <div class="property-card">
+                <img src="CommercialArea.png" alt="Commercial Space"/>
+                <div class="info">
+                    <h3>Commercial Space</h3>
+                    <p>Office and shop spaces available at prime locations.</p>
+                </div>
+            </div>
+
+            <!-- Farmland -->
+            <div class="property-card">
+                <img src="FarmLand.jpg" alt="Farmland"/>
+                <div class="info">
+                    <h3>Farm Land</h3>
+                    <p>Rich soil, peaceful location — ideal for farming or weekend retreats.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" class="section">
+        <div class="card contact-card">
+            <h2>Get in Touch</h2>
+            <p>We're here to help you buy or sell your property with trust and ease.</p>
+
+            <div class="contact-details">
+                <p><strong>📞 Phone:</strong> +91 9293650666</p>
+                <p><strong>📧 Email:</strong> manthu.polu@gmail.com</p>
+                <p><strong>📍 Location:</strong> Vijayawada, Andhra Pradesh</p>
+            </div>
+
+            <div class="contact-button">
+                <a href="tel:+919876543210">📞 Call Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 BHU Varaha Properties. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
