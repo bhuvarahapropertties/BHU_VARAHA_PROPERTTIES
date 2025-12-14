@@ -10,8 +10,8 @@
         body {
             margin: 0;
             font-family: "Segoe UI", Arial, sans-serif;
-            background-color: #f9f9f9;
             color: #333;
+            background: linear-gradient(to bottom right, #693882, #1e3287);
         }
 
         a { text-decoration: none; }
@@ -19,7 +19,7 @@
         /* HEADER SECTION */
         header {
             position: relative;
-            background: center/cover no-repeat;
+            background: url('background.jpg') center/cover no-repeat;
             height: 60vh;
             display: flex;
             justify-content: center;
@@ -64,7 +64,7 @@
 
         /* NAVIGATION */
         nav {
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
             padding: 15px;
             text-align: center;
             box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
@@ -73,10 +73,28 @@
             z-index: 1000;
         }
         nav a {
-            margin: 0 20px;
+            margin: 0 25px;
             color: #1a73e8;
             font-weight: bold;
             font-size: 1.1rem;
+            display: inline-block;
+        }
+
+        /* MOBILE NAV — FIX */
+        @media (max-width: 768px) {
+            nav {
+                padding: 12px 0;
+            }
+            nav a {
+                display: block;
+                margin: 12px 0;
+                font-size: 1.15rem;
+                padding: 8px 0;
+                border-bottom: 1px solid #e0e0e0;
+            }
+            nav a:last-child {
+                border-bottom: none;
+            }
         }
 
         /* SECTIONS */
@@ -155,7 +173,6 @@
             .header-content img { width: 200px; }
             .header-content h1 { font-size: 2rem; }
             .header-content p { font-size: 1rem; }
-            nav a { display: block; margin: 10px 0; }
             .section { padding: 30px 20px; }
             .property-card img { height: 150px; }
         }
@@ -206,59 +223,62 @@
         <div class="card">
             <h2>About Us</h2>
             <p>
-                BHU Varaha Properties is dedicated to helping people find genuine and suitable properties—whether it's land, flats, or investment opportunities.
-                We personally visit each site, verify the surroundings, meet the owners, and ensure every property we show is trustworthy and accurate.
-                <br><br>
-                We also assist property owners in selling their land or flats by connecting them with genuine buyers.
-                Our goal is to make both buying and selling easy, transparent, and reliable for everyone.
+                BHU Varaha Properties ensures genuine, verified, and trustworthy property listings.
+                We personally visit every site, meet owners, and ensure accuracy.
+                We also help sellers connect with genuine buyers for land and flats.
             </p>
         </div>
     </div>
 
     <!-- PROPERTIES -->
     <div id="properties" class="section">
-        <h2 style="text-align:center; margin-bottom:20px;">Featured Properties</h2>
+        <h2 style="text-align:center; margin-bottom:20px; color: #ffffff;">Featured Properties</h2>
         <div class="property-grid">
             <div class="property-card">
                 <img src="apartment.jpg" alt="Apartments">
                 <div class="info">
                     <h3>Apartments</h3>
-                    <p>Affordable 1BHK–3BHK homes with premium finishing and family-friendly space.</p>
+                    <p>Affordable 1BHK–3BHK homes with premium finishing.</p>
                 </div>
             </div>
+
             <div class="property-card">
                 <img src="IndependentHouse.jpeg" alt="Independent House">
                 <div class="info">
                     <h3>Independent House / Villa</h3>
-                    <p>Beautifully built home with peaceful surroundings.</p>
+                    <p>Beautiful houses in peaceful communities.</p>
                 </div>
             </div>
+
             <div class="property-card">
                 <img src="ResidentialLand.jpg" alt="Residential Land">
                 <div class="info">
                     <h3>Open Plot / Residential Land</h3>
-                    <p>Ideal for constructing your dream home.</p>
+                    <p>Perfect for building your dream home.</p>
                 </div>
             </div>
+
             <div class="property-card">
                 <img src="GatedCommunity.jpg" alt="Gated Community">
                 <div class="info">
                     <h3>Gated Community Plot</h3>
-                    <p>Secure, developed community with amenities.</p>
+                    <p>Secure, well-developed plots with amenities.</p>
                 </div>
             </div>
+
             <div class="property-card">
                 <img src="CommercialArea.png" alt="Commercial Space">
                 <div class="info">
                     <h3>Commercial Space</h3>
-                    <p>Office and shop spaces available at prime locations.</p>
+                    <p>Shops and offices in prime locations.</p>
                 </div>
             </div>
+
             <div class="property-card">
                 <img src="FarmLand.jpg" alt="Farmland">
                 <div class="info">
                     <h3>Farm Land</h3>
-                    <p>Rich soil, peaceful location — ideal for farming or weekend retreats.</p>
+                    <p>Ideal for farming or weekend retreats.</p>
                 </div>
             </div>
         </div>
@@ -268,14 +288,15 @@
     <div id="contact" class="section">
         <div class="card contact-card">
             <h2>Get in Touch</h2>
-            <p>We're here to help you buy or sell your property with trust and ease.</p>
+            <p>We're here to help you buy or sell your property easily & securely.</p>
             <div class="contact-details">
-                <p><strong>📞 Phone:</strong> +91 9293650666</p>
-                <p><strong>📧 Email:</strong> manthu.polu@gmail.com</p>
-                <p><strong>📍 Location:</strong> Vijayawada, Andhra Pradesh</p>
+                <p><strong>📞 Phone:</strong> +91 7207106555</p>
+                <p><strong>📧 Email:</strong> Bhuvarahapropertties@gmail.com</p>
+                <p><a href="https://www.google.com/maps/search/MTM%20Services/@16.48333596,80.68674468,17z?hl=en"><strong>📍 Location:</strong> Kavuri Towers, flot 301, 3rd floor, centre, Vijayawada, 520007, AP</a></p>
+
             </div>
             <div class="contact-button">
-                <a href="tel:+919293650666">📞 Call Now</a>
+                <a href="tel:+917207106555">📞 Call Now</a>
             </div>
         </div>
     </div>
